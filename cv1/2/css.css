@@ -1,0 +1,33 @@
+#Nadpis{
+    background-color: red;
+    
+    font-size: large;
+    font-weight: bold;
+    height: 60px;
+
+}
+
+#text{
+    display: flex;
+}
+
+#left{
+    
+    background-color: lightblue;
+    padding-left: 10px;
+    
+    width: 150px;
+    height: 150px;
+    
+}
+
+#right{
+    padding-left: 30px;
+}
+
+#konec{
+    background-color: yellow;
+    padding-left: 10px;
+    height: 30px;
+
+}
