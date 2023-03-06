@@ -5,8 +5,31 @@
 </head>
 
 <body>
-    Ahoj
+    Podle zveřejněných informací se týkají opravy a stavebních úprav nemovitosti Vikárka, výběru a svozu peněz v
+    hotovosti v areálu Pražského hradu,
+    hospodaření se dřevem v areálech Pražského hradu a zámku Lány a pak nejasností ohledně skladu alkoholu na zámku
+    Lány.
 
+    <p id="demo"></p>
+    <p id="Consonant"></p>
+
+    <script>
+        string = "Podle zveřejněných informací se týkají opravy a stavebních úprav nemovitosti Vikárka, výběru a svozu peněz v hotovosti v areálu Pražského hradu, hospodaření se dřevem v areálech Pražského hradu a zámku Lány a pak nejasností ohledně skladu alkoholu na zámku Lány."
+        function countVowel(vowel) {
+            count = vowel.match(/[euioaěýáíé]/gi).length;
+            return count;
+        }
+        function countConsonant(consonant) {
+            count = consonant.match(/[qwrtpsdfghjklxcvbnmščřž]/gi).length;
+            return count;
+        }
+        CountWowel = countVowel(string);
+        CountConsonant = countConsonant(string);
+
+
+        document.getElementById("demo").innerHTML = "Počet samohlásek je:" + CountWowel;
+        document.getElementById("Consonant").innerHTML = "Počet Souhlásek je " + CountConsonant;
+    </script>
 
 </body>
 
